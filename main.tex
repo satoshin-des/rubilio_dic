@@ -1,7 +1,6 @@
 \documentclass[twocolumn]{jsbook}
 \bibliographystyle{jplain}
 \usepackage[jis2004]{otf}
-\usepackage[backend=biber]{biblatex}
 \title{ルビリオ当て字典}
 \author{
 さとしん
@@ -11,11 +10,10 @@
 \usepackage{txfonts}
 \usepackage{enumerate}
 \usepackage{enumitem}
+\usepackage{url}
 %\usepackage{autobreak}
 
 \newcommand{\ccite}[1]{《#1》}
-
-\addbibresource{refs.bib}
 
 \newcommand{\exsentence}[3]{\item 《#1》#2（#3）．}
 \newcommand{\exlist}[1]{
@@ -76,11 +74,18 @@
 \NoLabSectionTable{い}
 % ======================================
 
-    \item \textbf{イェーガー}【狩人】\ccite{紅蓮の弓矢}{囚われた屈辱は反撃の嚆矢だ城壁の其の彼方獲物を屠る≪\uline{狩人}≫（Revo，2014）}
-    \item \textbf{イタズラ}【素敵なこと】「イタズラジャーニー」
-    \item \textbf{いつまでもどこまでもいちご}【苺苺苺苺苺苺苺苺苺苺苺】◇商品名
-    \item \textbf{いのり}【感謝】『修道少女と偶像少女』（cosMo（暴走P）、2012）
-    \item \textbf{いま}【不本意な現状】\ccite{紅蓮の弓矢}{≪\uline{不本意な現状}≫を変えるのは戦う覚悟だ（Revo，2014）}
+    \item \textbf{イェーガー}【狩人】
+    \exlist{
+        \exsentence{紅蓮の弓矢}{囚われた屈辱は反撃の嚆矢だ城壁の其の彼方獲物を屠る≪\uline{狩人}≫}{Revo，2014}
+    }
+    \item \textbf{いのり}【感謝】
+    \exlist{
+        \exsentence{修道少女と偶像少女}{ああ忘れてたよ　ゴメン→　形式だけの\uline{感謝}≪物欲薄イシ≫　←平和な証でしょ}{cosMo（暴走P），2012}
+    }
+    \item \textbf{いま}【不本意な現状】
+    \exlist{
+        \exsentence{紅蓮の弓矢}{≪\uline{不本意な現状}≫を変えるのは戦う覚悟だ}{Revo，2014}
+    }
     \item \textbf{いま}【現代】『リアル初音ミクの消失』（cosMo（暴走P）、2018）
     \item \textbf{いもっこ}【妹】『秋田妹！えびなちゃん』
     \item \textbf{イドフロント}【前線基地】『メイドインアビス』（つくしあきひと）
